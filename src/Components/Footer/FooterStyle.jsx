@@ -35,10 +35,10 @@ export const FooterStyle = () => (
     <FooterContent style={{borderBottom: "1px solid red"}}>
       <FooterLogo src={Logo} alt="Logo" />
       <FooterText>AnimeApp</FooterText>
-      <Link style={{marginLeft: "10px", marginRight: "10px",color: "white",textDecoration: "none"}}>Home</Link>
-      <Link style={{marginLeft: "10px", marginRight: "10px",color: "white",textDecoration: "none"}}>Anime</Link>
-      <Link style={{marginLeft: "10px", marginRight: "10px",color: "white",textDecoration: "none"}}>Manga</Link>
-      <Link style={{marginLeft: "10px", marginRight: "10px",color: "white",textDecoration: "none"}}>About</Link>
+      <Link style={{marginLeft: "10px", marginRight: "10px",color: "white",textDecoration: "none"}}to={"/"}>Home</Link>
+      <Link style={{marginLeft: "10px", marginRight: "10px",color: "white",textDecoration: "none"}} to={"/Anime"}>Anime</Link>
+      <Link style={{marginLeft: "10px", marginRight: "10px",color: "white",textDecoration: "none"}} to={"/Manga"}>Manga</Link>
+      <Link style={{marginLeft: "10px", marginRight: "10px",color: "white",textDecoration: "none"}} to={"/About"}>About</Link>
     </FooterContent>
     <FooterContent>
       <FooterText>© 2022 Flowbite™. All Rights Reserved.</FooterText>

@@ -11,15 +11,20 @@ import Anime from "./Components/Anime/Anime";
 import Manga from "./Components/Manga/Manga";
 import About from "./Components/About us/AboutUs";
 import Favorites from "./Components/Favorites/Favorites";
+import AnimeDetail from "./Components/Anime/AnimeDetails";
+import MangaDetail from "./Components/Manga/MangaDetails";
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
   html, body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    background-color: white;
     padding: 0;
-    color: black;
+    background-color: #343338;
+    color: white;
+    font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     box-sizing: border-box;
   }
@@ -35,11 +40,11 @@ const MainContent = styled.div`
   display: flex;
   flex-direction: row;
   flex: 1;
-  margin-top: 10vh; /* Assuming the header height is 10vh */
+  margin-top: 1.8vh;
 `;
 
 const ContentWrapper = styled.div`
-  margin-left: 15vw; /* Adjust according to DropDown width */
+  margin-left: 6.6vw;
   flex: 1;
   padding: 20px;
 `;
@@ -57,7 +62,9 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/Manga" element={<Manga />} />
+                <Route path="/Manga/:id" element={<MangaDetail />} /> 
                 <Route path="/Anime" element={<Anime />} />
+                <Route path="/Anime/:id" element={<AnimeDetail />} /> 
                 <Route path="/Favorites" element={<Favorites />} />
                 <Route path="/About" element={<About />} />
               </Routes>

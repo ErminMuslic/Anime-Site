@@ -7,6 +7,7 @@ export const NavbarContainer = styled.div`
   width: 100vw;
   position: fixed;
   top: 0;
+  border-bottom: 1px solid #454545;
   display: flex;
   align-items: center;
   z-index: 10; 
@@ -26,8 +27,8 @@ export const LogoImage = styled.img`
 
 export const Title = styled.p`
   color: white;
-  font-size: 30px;
-  margin-left: 10px; /* Add some space between the logo and text */
+  font-size: 25px;
+  margin-left: 10px;
 `;
 
 export const HeaderStyle = () => (
